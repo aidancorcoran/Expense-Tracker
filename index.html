@@ -30,31 +30,33 @@
         <!--Total income and taxes-->
         <section class="income">
             <!-- <img src="Images/income.jpg"> -->
-            <select name="province" id="province">
-                <option value disabled selected>Choose province or territory</option>
-                <option value="alberta">Alberta</option>
-                <option value="britishcolumbia">British Columbia</option>
-                <option value="manitoba">Manitoba</option>
-                <option value="newbrunswick">New Brunswick</option>
-                <option value="newfoundland">Newfoundland</option>
-                <option value="northwest">Northwest Territories</option>
-                <option value="novascotia">Nova Scotia</option>
-                <option value="nunavut">Nunavut</option>
-                <option value="ontario">Ontario</option>
-                <option value="pei">Prince Edward Island</option>
-                <option value="quebec">Québec</option>
-                <option value="saskatchewan">Saskatchewan</option>
-                <option value="yukon">Yukon</option>
-              </select>
-            <h1>Gross Employment Income</h1>
-            <input type="number" id="gross-income" min="0" max="999999999">
-            <h1>Gross Self-Employment Income</h1>
-            <input type="number" id="self-income" min="0" max="999999999">
-            <h1>RRSP Deductions</h1>
-            <input type="number" id="rrsp" min="0" max="999999999">
-            
-            <input type="button" onclick="calculateNetIncome()" value="Calculate">
-            <h1>Your gross income is: <span id="result"></span></h1>
+            <div class="gross-income">
+                <select name="province" id="province">
+                    <option value disabled selected>Choose province or territory</option>
+                    <option value="alberta">Alberta</option>
+                    <option value="britishcolumbia">British Columbia</option>
+                    <option value="manitoba">Manitoba</option>
+                    <option value="newbrunswick">New Brunswick</option>
+                    <option value="newfoundland">Newfoundland</option>
+                    <option value="northwest">Northwest Territories</option>
+                    <option value="novascotia">Nova Scotia</option>
+                    <option value="nunavut">Nunavut</option>
+                    <option value="ontario">Ontario</option>
+                    <option value="pei">Prince Edward Island</option>
+                    <option value="quebec">Québec</option>
+                    <option value="saskatchewan">Saskatchewan</option>
+                    <option value="yukon">Yukon</option>
+                </select>
+                <h1>Gross Employment Income</h1>
+                <input type="number" id="gross-income" min="0" max="999999999">
+                <h1>Gross Self-Employment Income</h1>
+                <input type="number" id="self-income" min="0" max="999999999">
+                <h1>RRSP Deductions</h1>
+                <input type="number" id="rrsp" min="0" max="999999999">
+                
+                <input type="button" onclick="calculateNetIncome()" value="Calculate">
+                <h1>Your gross income is: <span id="result"></span></h1>
+            </div>
         </section>
     </body>
 </html>
